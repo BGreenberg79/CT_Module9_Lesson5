@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms and Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Form with bootstrap">
+    <meta name="keywords" content="forms, bootstrap">
+    <meta name="author" content="Benjamin Greenberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- JSDelivr bootstrap link -->
+</head>
+<body>
+    <!-- Task 1.1 Implement multi-column layout with bootstrap -->
+    <form class="needs-validation" novalidate method="POST" action="example.com/M9L5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <label for="favcuisine" class="form-label">Favorite Cuisine:</label>
+                    <input type="text" placeholder="Chinese Food" id="favcuisine" name="favcuisine" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="favdish" class="form-label">Favorite Dish:</label>
+                    <input type="text" placeholder="Kung Pao Chicken" id="favdish" name="favdish" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <label for="favbev" class="form-label">Favorite Beverage:</label>
+                    <input type="text" placeholder="Orange Soda" id="favbev" name="favbev" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="favfruit" class="form-label">Favorite Fruit:</label>
+                    <input type="text" placeholder="Grapes" id="favfruit" name="favfruit" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 mt-3">
+                    <input type="submit" value="submit" class="btn btn-success bg-success text-white">
+                    <input type="reset" value="reset" class="btn btn-danger bg-danger text-white">
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Task 1.2 Inline Contact form -->
+    <form class="needs-validation mt-5" novalidate method="POST" action="example.com/M9L5v2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-12">
+                    <label for="fullname" class="form-label">Full Name:</label>
+                    <input type="text" placeholder="John Doe" id="fullname" name="fullname" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <label for="phone" class="form-label">Phone Number:</label>
+                    <input type="tel" placeholder="999-999-9999" id="phone" name="phone" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <label for="email" class="form-label">Email:</label>
+                        <input type="email" placeholder="abc@email.com" id="email" name="email" class="form-control" required>
+                        <div class="valid-feedback">Valid Input</div>
+                        <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <input type="submit" value="submit" class="btn btn-success bg-success text-white mt-4">
+                </div>
+            </div>
+        </div>
+    </form>
+    <form class="needs-validation mt-5" novalidate method="POST" action="example.com/M9L5v3"></form>
+        <div class="container-fluid">
+            <!-- Task 1.3 Stacked form layout -->
+                <div class="col-12">
+                    <label for="petname" class="form-label">Pet's Name:</label>
+                    <input type="text" placeholder="Koko" id="petname" name="petname" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-12">
+                    <label for="animaltype" class="form-label">Type of Animal:</label>
+                    <input type="text" placeholder="Cat" id="animaltype" name="animaltype" class="form-control" required>
+                    <div class="valid-feedback">Valid Input</div>
+                    <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-12">
+                    <label for="breed" class="form-label">Pet Breed:</label>
+                        <input type="text" placeholder="Domestic Shorthair" id="breed" name="breed" class="form-control" required>
+                        <div class="valid-feedback">Valid Input</div>
+                        <div class="invalid-feedback">Invalid Input</div>
+                </div>
+                <div class="col-12">
+                    <input type="submit" value="submit" class="btn btn-success bg-success text-white my-2">
+                </div>
+                <div class="col-12">
+                    <input type="reset" value="reset" class="btn btn-danger bg-danger text-white my-2">
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- JSdelivr script -->
+</body>
+</html>
